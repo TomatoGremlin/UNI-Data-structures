@@ -8,12 +8,12 @@ void Euclid(int a, int b) {
     cout << "Recursion Copy #" << counter << endl << "a= " << a << " b= " << b << " Drowning" << endl;
     counter++;
 
-    if (a % b > 0) { // ðåêóðñèÿ
+    if (a % b > 0) { // Ã°Ã¥ÃªÃ³Ã°Ã±Ã¨Ã¿
         Euclid(b, a % b);
         counter--;
         cout << "Recursion Copy #" << counter << endl << "a= " << a << " b= " << b << " Coming up" << endl;
     }
-    else { // äúíî
+    else { // Ã¤ÃºÃ­Ã®
         cout << "- Bottom of the recursion reached -" << endl << endl;
         answer = b;
     }
