@@ -16,8 +16,8 @@ int main(){
 	srand(time(NULL));
 	ofstream SDLab1Table;
 	SDLab1Table.open("Domashno1B.csv", ios::app);
-	SDLab1Table << endl << ";" << "Âğåìå (ìèëèñåêóíäè) çà àëãîğèòìè çà ñîğòèğîâêà" << endl;
-	SDLab1Table << "Áğîé åëåìåíòè â ìàñèâà" << ";" << "Ïğÿêà ñåëåêöèÿ" << ";" << "Ïğÿêî âìúêâàíå" << ";" << "Ìåõóğ÷å" << ";" << endl;
+	SDLab1Table << endl << ";" << "Ã‚Ã°Ã¥Ã¬Ã¥ (Ã¬Ã¨Ã«Ã¨Ã±Ã¥ÃªÃ³Ã­Ã¤Ã¨) Ã§Ã  Ã Ã«Ã£Ã®Ã°Ã¨Ã²Ã¬Ã¨ Ã§Ã  Ã±Ã®Ã°Ã²Ã¨Ã°Ã®Ã¢ÃªÃ " << endl;
+	SDLab1Table << "ÃÃ°Ã®Ã© Ã¥Ã«Ã¥Ã¬Ã¥Ã­Ã²Ã¨ Ã¢ Ã¬Ã Ã±Ã¨Ã¢Ã " << ";" << "ÃÃ°Ã¿ÃªÃ  Ã±Ã¥Ã«Ã¥ÃªÃ¶Ã¨Ã¿" << ";" << "ÃÃ°Ã¿ÃªÃ® Ã¢Ã¬ÃºÃªÃ¢Ã Ã­Ã¥" << ";" << "ÃŒÃ¥ÃµÃ³Ã°Ã·Ã¥" << ";" << endl;
 
 	for (int amount_elements = 10000; amount_elements <= 100000; amount_elements += 10000) { // Loop to get different arrays with different amounts of elements
 		int* original_array = new int[amount_elements]; // Create an array for the random values
@@ -97,7 +97,7 @@ void Insertion(int* number_array, int n){
 		while (j >= 0 && number_array[j] > current_number)
 		{
 			number_array[j + 1] = number_array[j];
-			j = j - 1;
+			j--;
 		}
 		number_array[j + 1] = current_number;
 	}
