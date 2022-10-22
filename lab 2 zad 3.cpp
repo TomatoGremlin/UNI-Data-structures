@@ -8,7 +8,6 @@ int Factorial(int n) {
     // ----
     if ( n > 1) {
         cout << "n =" << n << endl;
-        //return 1;
         number = n * Factorial(n - 1);
         cout << "n =" << number << endl;
         return number;
@@ -28,18 +27,4 @@ int main(){
     cout << endl;
     return 0;
 }
-
-
-    /*
-    if (n == 0 || n ==1)
-    {
-        cout << " n =" << n << endl;
-        //return 1;
-           cout << "n" << Factorial(n) << endl;
-    }
-    else // n > 1
-    {
-        cout << "Bottom" << endl << " n= " << n << endl;
-        return n * Factorial(n - 1);
-        number
-    }*/
+   
