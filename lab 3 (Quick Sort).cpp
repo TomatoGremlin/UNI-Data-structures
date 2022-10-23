@@ -10,21 +10,21 @@ void qsort(int left, int right) {
     i = left, j = right;
     etalon = Arr[(left + right )/2 ];
  
-    cout << "#Êîïèå, ãðàíèöè íà äÿëà îò " << i << " äî " << j << endl;
-    cout << "Åòàëîí= " << etalon << endl;
+    cout << "#ÐšÐ¾Ð¿Ð¸Ðµ, Ð³Ñ€Ð°Ð½Ð¸Ñ†Ð¸ Ð½Ð° Ð´ÑÐ»Ð° Ð¾Ñ‚  " << i << " Ð´Ð¾ " << j << endl;
+    cout << "Ð•Ñ‚Ð°Ð»Ð¾Ð½= " << etalon << endl;
     do
     {
         while (Arr[i] < etalon){ 
-            cout << "Ïîòúâàíå íàëÿâî" << endl;
+            cout << "ÐŸÐ¾Ñ‚ÑŠÐ²Ð°Ð½Ðµ Ð½Ð°Ð»ÑÐ²Ð¾" << endl;
             i++;
         }
         while (Arr[j] > etalon){  
-            cout << "Ïîòúâàíå íàäÿñíî" << endl;
+            cout << "ÐŸÐ¾Ñ‚ÑŠÐ²Ð°Ð½Ðµ Ð½Ð°Ð´ÑÑÐ½Ð¾" << endl;
             j--; 
         }
         if (i <= j)
         {
-             cout << "Ðàçìÿíà íà " << Arr[i] << " è " << Arr[j] << endl;
+             cout << "Ð Ð°Ð·Ð¼ÑÐ½Ð° Ð½Ð°  " << Arr[i] << " Ð¸ " << Arr[j] << endl;
              swap = Arr[i];
              Arr[i] = Arr[j];
              Arr[j] = swap;
@@ -33,7 +33,7 @@ void qsort(int left, int right) {
              j--;
         }
     } while (i <= j);
-    cout << "Êðàé íà ðàçìåíèòå" << endl;
+    cout << "ÐšÑ€Ð°Ð¹ Ð½Ð° Ñ€Ð°Ð·Ð¼ÐµÐ½Ð¸Ñ‚Ðµ" << endl;
 
     //Uslovie za duno:
     if (left < right) {
@@ -47,8 +47,8 @@ void qsort(int left, int right) {
     }
     else {
         // -- bottom --
-        cout << "- Äúíî. -" << endl;
-        cout << "Èçïëóâàíå" << endl << endl;
+        cout << "- Ð”ÑŠÐ½Ð¾. -" << endl;
+        cout << "Ð˜Ð·Ð¿Ð»ÑƒÐ²Ð°Ð½Ðµ" << endl << endl;
     }
 }
 void Print() {
@@ -57,10 +57,10 @@ void Print() {
 }
 int main(){ 
     setlocale(LC_ALL, "Bulgarian");
-    cout << "Íà÷àëíî ñúñòîÿíèå íà ìàñèâà:" << endl;
+    cout << "ÐÐ°Ñ‡Ð°Ð»Ð½Ð¾ ÑÑŠÑÑ‚Ð¾ÑÐ½Ð¸Ðµ Ð½Ð° Ð¼Ð°ÑÐ¸Ð²Ð° :" << endl;
     Print();
     qsort(0, 14-1);
-    cout << endl << "Êðàéíî ñúñòîÿíèå íà ìàñèâà :" << endl;
+    cout << endl << "ÐšÑ€Ð°Ð¹Ð½Ð¾ ÑÑŠÑÑ‚Ð¾ÑÐ½Ð¸Ðµ Ð½Ð° Ð¼Ð°ÑÐ¸Ð²Ð° :" << endl;
     Print();
     return 0;
 }
