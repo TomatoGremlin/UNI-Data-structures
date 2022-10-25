@@ -14,12 +14,10 @@ void qsort(int left, int right) {
     cout << "Еталон= " << etalon << endl;
     do
     {
-        while (Arr[i] < etalon){ 
-            cout << "Потъване наляво" << endl;
+        while (Arr[i] < etalon){
             i++;
         }
-        while (Arr[j] > etalon){  
-            cout << "Потъване надясно" << endl;
+        while (Arr[j] > etalon){ 
             j--; 
         }
         if (i <= j)
@@ -40,9 +38,11 @@ void qsort(int left, int right) {
         // -- recursion --
      
         //left part
+        cout << "Потъване наляво" << endl;
         qsort(left, j);
-
+       
         //right part
+        cout << "Потъване надясно" << endl;
         qsort(i, right);
     }
     else {
