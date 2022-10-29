@@ -16,8 +16,8 @@ int main(){
 	srand(time(NULL));
 	ofstream SDLab1Table;
 	SDLab1Table.open("Domashno1B.csv", ios::app);
-	SDLab1Table << endl << ";" << "Âðåìå (ìèëèñåêóíäè) çà àëãîðèòìè çà ñîðòèðîâêà" << endl;
-	SDLab1Table << "Áðîé åëåìåíòè â ìàñèâà" << ";" << "Ïðÿêà ñåëåêöèÿ" << ";" << "Ïðÿêî âìúêâàíå" << ";" << "Ìåõóð÷å" << ";" << endl;
+	SDLab1Table << endl << ";" << "Време (милисекунди) за алгоритми за сортировка" << endl;
+	SDLab1Table << "Брой елементи в масива" << ";" << "Пряка селекция" << ";" << "Пряко вмъкване" << ";" << "Мехурче" << ";" << endl;
 
 	for (int amount_elements = 10000; amount_elements <= 100000; amount_elements += 10000) { // Loop to get different arrays with different amounts of elements
 		int* original_array = new int[amount_elements]; // Create an array for the random values
